@@ -45,9 +45,9 @@ const criarItem = (tarefa, status, indice) => {
 
 //limpa itens
 const limparItens = () => {
-    const todoList = document.querySelector('#listaTarefa')
+    const todaLista = document.querySelector('#listaTarefa')
 
-    while (todoList.firstChild) { todoList.removeChild(todoList.lastChild) }
+    while (todaLista.firstChild) {todaLista.removeChild(todaLista.lastChild) }
 }
 
 //atualiza tela

@@ -19,6 +19,7 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
+/*Relógio*/
 header {
     margin-top: 45px;
     display: flex;
@@ -38,7 +39,7 @@ header .relogio {
     font-size: 60px;
 }
 
-
+/*Lista*/
 main {
     display: flex;
     flex-direction: column;
@@ -55,7 +56,7 @@ main .titulo-lista {
     width: 100%;
     margin-top: 20px;
     font-size: 30px;
-    color: var(--darkwhite-color);
+    color: var(--white-color);
     text-shadow: 4px 4px 0px var(--black-color);
     white-space: nowrap;
 }
@@ -91,7 +92,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 220px;
+    padding-top: 210px;
     padding-bottom: 15px;
     font-size: 15px;
     color: var(--darkwhite-color);
@@ -166,7 +167,7 @@ footer {
     text-decoration:line-through;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     header .relogio {
         font-size: 28px;
     }
@@ -180,9 +181,11 @@ footer {
     }
     .lista-tarefa {
         width: 380px;
-        font-size: 16px;
+        font-size: 12px;
+        line-height: 18px;
     }
     footer {
+        margin-top: 100px;
         font-size: 9px;
     }
 }
