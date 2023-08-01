@@ -1,0 +1,1 @@
+Desenvolvi uma Agenda estilo Retrô para organização do usuário e marcação de tarefas. Também adicionei um relogio de tempo real para melhor orientação. Usei as linguagens HTML, CSS e JAVASCRIPT.

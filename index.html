@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Lista de Tarefas</title>
+
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="relogio">
+                <span id="horas">00</span>
+                <p>:</p>           
+                <span id="minutos">00</span>
+                <p>:</p>
+              <span id="segundos">00</span> 
+            </div>
+        </header>
+        <main>
+            <div class="titulo-lista">
+                <h1>Lista de Tarefas</h1>
+            </div>
+            <div class="entrada-tarefa" id="novaTarefa">
+                <input type="text" placeholder="Digite sua tarefa..." maxlength="70">
+            </div>
+            <div class="lista-tarefa" id="listaTarefa">
+            </div>
+        </main>
+        <footer>
+            <p>&copy; | Otávio Augusto de Melo Ribeiro</p>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>

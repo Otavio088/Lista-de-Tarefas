@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --background-color: #16a085;
+    --black-color: #000;
+    --dark-color: #2c3e50;
+    --white-color: #fff;
+    --darkwhite-color: #ecf0f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+header .relogio {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 20px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    box-shadow: 4px 4px 2px var(--black-color);
+    font-size: 60px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+main .titulo-lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 30px;
+    color: var(--darkwhite-color);
+    text-shadow: 4px 4px 0px var(--black-color);
+    white-space: nowrap;
+}
+
+main .entrada-tarefa input {
+    display: flex;
+    height: 75px;
+    width: 70vw;
+    border: none;
+    border: #000 solid 2px;
+    padding-left: 15px;
+    font-family: 'Press Start 2P', cursive;
+    color: var(--black-color);
+    margin-bottom: 20px;
+}
+
+.entrada-tarefa > input::placeholder {
+    font-style: italic;
+    color: var(--black-color);
+}
+
+.lista-tarefa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    gap: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 220px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: var(--darkwhite-color);
+    text-shadow: 2px 2px 0px var(--black-color);
+    white-space: nowrap;
+}
+
+/*JavaScript*/
+.toda-tarefa{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 65px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--black-color);
+    background-color: var(--darkwhite-color);
+    box-shadow: 4px 4px 0px var(--black-color);
+    transition: transform 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
+}
+
+.toda-tarefa:hover {
+    transition: 0.6s ease;
+    transform: scale(1.02);
+    background-color: var(--dark-color);
+    color: var(--darkwhite-color);
+}
+
+.toda-tarefa > div {
+    width: 80%;
+}
+
+.toda-tarefa > input[type='text'] {
+    border: none;
+    width: 80%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.toda-tarefa > input[type='checkbox'] {
+    margin-left: 5px;
+    margin-right: 5px;
+    accent-color: green;
+    cursor: pointer;
+}
+
+.toda-tarefa > input[type='button'] {
+    margin-right: 5px;
+    background-color: red;
+    box-shadow: 1px 1px 0px var(--black-color);
+    color: var(--white-color);
+    transition: transform 200ms ease-in-out;
+    transition: color 0.5s, color 0.5s;
+}
+.toda-tarefa > input[type='button']:hover {
+    transform: scale(1.05);
+    color: var(--dark-color);
+}
+
+.toda-tarefa > input[type='button'],
+.toda-tarefa > input[type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    font: inherit;
+    font-family: 'Press Start 2P', cursive;
+    border: 1px solid var(--black-color);
+}
+
+.toda-tarefa > input[type='checkbox']:checked + div {
+    text-decoration:line-through;
+}
+
+@media (max-width: 600px) {
+    header .relogio {
+        font-size: 28px;
+    }
+
+    main .titulo-lista {
+        margin-top: 0;
+        font-size: 11px;
+    }
+    main .entrada-tarefa input {
+        width: 350px;
+    }
+    .lista-tarefa {
+        width: 380px;
+        font-size: 16px;
+    }
+    footer {
+        font-size: 9px;
+    }
+}
